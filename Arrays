@@ -1,0 +1,33 @@
+int main()
+{
+    int arr[100];
+    int n;
+    printf("\nNhap so luong phan tu n = ");
+    scanf("%d", &n);
+
+    // Nhap mang
+    for (int i = 0; i < n; ++i)
+    {
+        printf("\nNhap a[%d] = ", i);
+        scanf("%d", &arr[i]);
+    }
+    int tg;
+    for (int i = 0; i < n - 1; ++i)
+    {
+        for (int j = i + 1; j < n; ++j)
+        {
+            if (arr[i] > arr[j])
+            {
+                // Hoan vi
+                tg = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tg;
+            }
+        }
+    }
+    printf("\nMang sau khi sap xep tang dan la: ");
+    for (int i = 0; i < n; ++i)
+    {
+        printf("%d ", arr[i]);
+    }
+}
