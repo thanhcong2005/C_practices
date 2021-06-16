@@ -1,0 +1,15 @@
+int main() {
+    int i;
+    int a[100];
+    printf("Nhap vao so cac so nguyen: ");
+    int n;
+    scanf("%d",&n);
+    for (int i=0;i<n;i++) {
+        printf("\nNhap a[%d] = ",i);
+        scanf("%d",&a[i]);
+    }
+    printf("Cac phan tu trong mang la: ");
+    for (int i=0;i<n;i++) {
+        printf("%d ",a[i]);
+    }
+}
